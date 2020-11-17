@@ -8,3 +8,32 @@
 		--general_size : 32px;
 		--general_font : 'Inter';
 }
+
+/* PAGE BACKGROUND ---------------------------------*/
+.body--layout
+{
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(../images/pattern-curve.svg);
+	background-repeat: no-repeat; 
+	background-position: bottom 0px left 0px;
+}
+
+	/* TESTIMONY GLOBAL BLOCK ---------------------------------*/
+
+	.testimony
+	{
+		display: flex;
+		flex-direction: var(--testimony_flex_direction);
+	}
+
+	.testimony--layout
+	{
+		margin-left: var(--testimony_margin_left);
+		margin-top: var(--testimony_margin_top);
+		margin-right: var(--testimony_margin_right);
+		margin-bottom: var(--testimony_margin_bottom);
+	}
+
+
