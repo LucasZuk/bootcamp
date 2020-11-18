@@ -57,8 +57,8 @@
 			--navigation_border_radius : 30px 30px;
 
 			--profile_picture_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
-			--navigation_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
-
+/*			--navigation_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
+*/
 
 		/* POSITION ------------------------*/
 			--testimony_text_quotes_positionX : 0px;
