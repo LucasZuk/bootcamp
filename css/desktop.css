@@ -6,22 +6,72 @@
 	:root
 	{
 		/* SIZE ------------------------*/
+			--block_text_width : 19.59em;
+			--block_text_height : 6.31em;
+
+			--profile_picture_width : 16.81em;
+			--profile_picture_height : 16.94em;
+
+			--block_image_navigation_width : 3.53em;
+			--block_image_navigation_height : 1.75em;
+
+			--testimony_block_image_width : 21.97em;
+
+		/* FONT ------------------------*/
+			--general_font_size : 32px;
+			--secondary_font_size : 16px;
+
+			--block_text_font_weight : 300;
+			--identity_name_font_weight : 700;
+			--identity_profession_font_weight : 500;
+
+			--block_text_line_height : 1.44em;
+
+
 
 		/* BACKGROUND ------------------------*/
 
 		/* MARGIN ------------------------*/
 			--testimony_margin_left : 5.19em;
 
+			--testimony_block_text_margin_top : 5.14em;
+
+			--block_text_margin_top : 2.00em;
+			--block_text_margin_bottom : 1.59em;
+
+			--identity_name_margin_right : 0.28em;
+
+			--testimony_block_image_margin_top : 0px;
+
+			--profile_picture_margin_top : 2em;
+			--profile_picture_margin_left : 1.90em;
+
+			--navigation_margin_top : -1em;
+			--navigation_margin_left : 3.8em;
+
+
 		/* PADDING ------------------------*/
 		
 		/* BORDER ------------------------*/
+			--profile_picture_border_radius : 5px;
+			--navigation_border_radius : 30px 30px;
+
+			--profile_picture_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
+			--navigation_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
 
 
 		/* POSITION ------------------------*/
+			--testimony_text_quotes_positionX : 0px;
+			--testimony_text_quotes_positionY : 2.97em;
 
+			--testimony_image_bg_positionX : 0px;
+			--testimony_image_bg_positionY : 0px;
+
+			--testimony_block_image_left : -3.82em;
 
 		/*  FLEXBOX ------------------------*/
-
+			--testimony_flex_direction : row;
+			--testimony_block_text_flex_direction : column;
 
 
 	}

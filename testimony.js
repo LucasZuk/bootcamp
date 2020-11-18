@@ -1,28 +1,28 @@
-let testimonyBloc = document.getElementsByClassName("testimony")[0];
+let testimonyBlock = document.getElementsByClassName("testimony")[0];
 
 /* TEXT BLOC ELEMENTS */
-	let testimonyBlocText = document.createElement("div");
-	let blocTextQuotes = document.createElement("img");
-		blocTextQuotes.src = "./images/pattern-quotes.svg";
-		blocTextQuotes.alt = "Beautiful quotes illustration";
-	let blocTextText = document.createElement("p");
-	let blocTextIdentity = document.createElement("div");
+	let testimonyBlockText = document.createElement("div");
+	// let blockTextQuotes = document.createElement("img");
+	// 	blockTextQuotes.src = "./images/pattern-quotes.svg";
+	// 	blockTextQuotes.alt = "Beautiful quotes illustration";
+	let blockTextText = document.createElement("p");
+	let blockTextIdentity = document.createElement("div");
 	let identityName = document.createElement("h3");
 	let identityProfession = document.createElement("h4");
 	
-	testimonyBlocText.classList.add("testimony__bloc_text", "testimony__bloc_text--layout");
-	blocTextQuotes.classList.add("bloc_text__quotes", "bloc_text__quotes--layout");
-	blocTextText.classList.add("bloc_text__text", "bloc_text__text--layout");
-	blocTextIdentity.classList.add("bloc_text__identity", "bloc_text__identity--layout");
+	testimonyBlockText.classList.add("testimony__block_text", "testimony__block_text--layout");
+	// blocTextQuotes.classList.add("block_text__quotes", "block_text__quotes--layout");
+	blockTextText.classList.add("block_text__text", "block_text__text--layout");
+	blockTextIdentity.classList.add("block_text__identity", "block_text__identity--layout");
 	identityName.classList.add("identity__name", "identity__name--layout");
 	identityProfession.classList.add("identity__profession", "identity__profession--layout");
 
 /* IMAGE BLOC ELEMENTS */
-	let testimonyBlocImage = document.createElement("div");
-	let blocImageProfilePicture = document.createElement("img");
-	let blocImageBackground = document.createElement("img");
-		blocImageBackground.src = "./images/pattern-bg.svg";
-	let blocImageNavigation = document.createElement("div");
+	let testimonyBlockImage = document.createElement("div");
+	let blockImageProfilePicture = document.createElement("img");
+	// let blockImageBackground = document.createElement("img");
+	// 	blockImageBackground.src = "./images/pattern-bg.svg";
+	let blockImageNavigation = document.createElement("div");
 	let navigationPrevious = document.createElement("img");
 		navigationPrevious.src = "./images/icon-prev.svg";
 		navigationPrevious.alt = "Button Previous";
@@ -30,20 +30,20 @@ let testimonyBloc = document.getElementsByClassName("testimony")[0];
 		navigationNext.src = "./images/icon-next.svg";
 		navigationNext.alt = "Button Next";
 
-	testimonyBlocImage.classList.add("testimony__bloc_image", "testimony__bloc_image--layout");
-	blocImageProfilePicture.classList.add("bloc_image__profile_picture", "bloc_image__profile_picture--layout");
-	blocImageBackground.classList.add("bloc_image__background", "bloc_image__background--layout");
-	blocImageNavigation.classList.add("bloc_image__navigation", "bloc_image__navigation--layout");
+	testimonyBlockImage.classList.add("testimony__block_image", "testimony__block_image--layout");
+	blockImageProfilePicture.classList.add("block_image__profile_picture", "block_image__profile_picture--layout");
+	// blockImageBackground.classList.add("block_image__background", "block_image__background--layout");
+	blockImageNavigation.classList.add("block_image__navigation", "block_image__navigation--layout");
 	navigationPrevious.classList.add("navigation__previous", "navigation__previous--layout");
 	navigationNext.classList.add("navigation__next", "navigation__next--layout");
 
 /* MODIFICATION OF THE DOM */
 
-	testimonyBloc.append(testimonyBlocText, testimonyBlocImage);
-		testimonyBlocText.append(blocTextQuotes, blocTextText, blocTextIdentity);
-			blocTextIdentity.append(identityName, identityProfession);
-		testimonyBlocImage.append(blocImageBackground , blocImageProfilePicture, blocImageNavigation);
-			blocImageNavigation.append(navigationPrevious, navigationNext);
+	testimonyBlock.append(testimonyBlockText, testimonyBlockImage);
+		testimonyBlockText.append( blockTextText, blockTextIdentity);
+			blockTextIdentity.append(identityName, identityProfession);
+		testimonyBlockImage.append(blockImageProfilePicture, blockImageNavigation);
+			blockImageNavigation.append(navigationPrevious, navigationNext);
 	
 
 /* EASY WAY TO ADD AND PUBLISH DIFFERENT TESTIMONIES */
@@ -61,16 +61,16 @@ let testimonyBloc = document.getElementsByClassName("testimony")[0];
 
 		publishTestimony()
 		{
-			let blocTextText = document.getElementsByClassName("bloc_text__text")[0];
+			let blockTextText = document.getElementsByClassName("block_text__text")[0];
 			let identityName = document.getElementsByClassName("identity__name")[0];
 			let identityProfession = document.getElementsByClassName("identity__profession")[0];
-			let blocImageProfilePicture = document.getElementsByClassName("bloc_image__profile_picture")[0];
+			let blockImageProfilePicture = document.getElementsByClassName("block_image__profile_picture")[0];
 
-			blocTextText.innerHTML = this.testimonyText;
+			blockTextText.innerHTML = this.testimonyText;
 			identityName.innerHTML = this.name;
 			identityProfession.innerHTML = this.profession;
-			blocImageProfilePicture.src = this.profilPicture;
-			blocImageProfilePicture.alt = this.name;
+			blockImageProfilePicture.src = this.profilPicture;
+			blockImageProfilePicture.alt = this.name;
 		}
 	}
 
