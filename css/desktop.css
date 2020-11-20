@@ -1,12 +1,12 @@
 /* DESKTOP PARAMETERS ------------------------*/
 
-@media screen and (min-width: 375px)
+@media screen and (min-width: 376px)
 {
 
 	:root
 	{
 		/* SIZE ------------------------*/
-			--block_text_width : 19.59em;
+			--block_text_width : 20em;
 			--block_text_height : 6.31em;
 
 			--profile_picture_width : 16.81em;
@@ -16,6 +16,7 @@
 			--block_image_navigation_height : 1.75em;
 
 			--testimony_block_image_width : 21.97em;
+			--testimony_block_image_height : 100vh;
 
 		/* FONT ------------------------*/
 			--general_font_size : 32px;
@@ -26,10 +27,12 @@
 			--identity_profession_font_weight : 500;
 
 			--block_text_line_height : 1.44em;
+			--block_text_text_align : none;
 
 
 
 		/* BACKGROUND ------------------------*/
+			--block_text_background_size : 3.75em;
 
 		/* MARGIN ------------------------*/
 			--testimony_margin_left : 5.19em;
@@ -72,7 +75,7 @@
 		/*  FLEXBOX ------------------------*/
 			--testimony_flex_direction : row;
 			--testimony_block_text_flex_direction : column;
-
+			--identity_align_items : baseline;
 
 	}
 }

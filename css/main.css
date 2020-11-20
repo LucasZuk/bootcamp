@@ -10,6 +10,16 @@
 
 }
 
+/* MA0 STYLE ---------------------------------*/
+
+*
+{
+ 	margin : none;
+ 	margin-block-start: 0;
+ 	margin-block-end : 0;
+}
+
+
 /* PAGE BACKGROUND ---------------------------------*/
 	.body--layout
 	{
@@ -19,6 +29,7 @@
 		background-image: url(../images/pattern-curve.svg);
 		background-repeat: no-repeat; 
 		background-position: bottom 0px left 0px;
+		background-size: contain;
 
 		margin : 1em 0 0 0;
 	}
@@ -33,6 +44,7 @@
 
 			.testimony--layout
 			{
+				width: 20em;
 				margin-left: var(--testimony_margin_left);
 				margin-top: var(--testimony_margin_top);
 				margin-right: var(--testimony_margin_right);
@@ -54,8 +66,11 @@
 						background-image: url(../images/pattern-quotes.svg);
 						background-position: top var(--testimony_text_quotes_positionX) left var(--testimony_text_quotes_positionY); 
 						background-repeat: no-repeat;
+						background-size: var(--block_text_background_size);
 
 						margin-top: var(--testimony_block_text_margin_top);
+
+						width: var(--testimony_block_text_width);
 					}
 
 						/* BLOCk TEXT TEXT ---------------------------------*/
@@ -65,11 +80,12 @@
 
 							.block_text__text--layout
 							{
-								min-width : var(--block_text_width);
+								width : var(--block_text_width);
 								height : var(--block_text_height);
 
 								font-size : var(--general_font_size);
 								font-weight : var(--block_text_font_weight);
+								text-align: var(--block_text_text_align);
 								color: var(--dark_blue);
 								line-height: var(--block_text_line_height);
 
@@ -81,11 +97,13 @@
 							.block_text__identity
 							{
 								display: flex;
-								align-items: baseline;
+								align-items: var(--identity_align_items);
+								flex-direction : var(--block_text_identity_flex_direction);
 							}
 
 							.block_text__identity--layout
 							{
+								align-self: center;
 							}
 
 							/* IDENTITY NAME ---------------------------------*/
@@ -126,22 +144,28 @@
 					{
 						display: flex;
 						flex-direction: var(--testimony_block_text_flex_direction);
+						align-items: var(--testimony_block_image_align_items);
+
 
 						position: relative;
 						left: var(--testimony_block_image_left);
 						z-index: 1;
-
-						min-width: var(--testimony_block_image_width);
-						height: 100vh;
 					}
 
 					.testimony__block_image--layout
 					{
+
+						min-width: var(--testimony_block_image_width);
+						height: var(--testimony_block_image_height);
+
 						background-image: url(../images/pattern-bg.svg);
 						background-position: top var(--testimony_image_bg_positionX) left var(--testimony_image_bg_positionY); 
 						background-repeat: no-repeat;
+						background-size: var(--block_image_background_size);
 
 						margin-top: var(--testimony_block_image_margin_top);
+						margin-bottom: var(--testimony_block_image_margin_bottom);
+						margin-left: var(--testimony_block_image_margin_left);
 
 					}
 
@@ -149,13 +173,13 @@
 
 						.block_image__profile_picture
 						{
-							width: var(--profile_picture_width);
-							height: var(--profile_picture_height);
-
 						}
 
 						.block_image__profile_picture--layout
 						{
+							width: var(--profile_picture_width);
+							height: var(--profile_picture_height);
+
 							margin-top: var(--profile_picture_margin_top);
 							margin-left: var(--profile_picture_margin_left);
 
@@ -173,14 +197,13 @@
 							flex-direction: row;
 							justify-content: space-around;
 							align-items: center;
-
-							width: var(--block_image_navigation_width);
-							height: var(--block_image_navigation_height);
-
 						}
 
 						.block_image__navigation--layout
 						{
+							width: var(--block_image_navigation_width);
+							height: var(--block_image_navigation_height);
+
 							margin-top: var(--navigation_margin_top);
 							margin-left: var(--navigation_margin_left);
 
@@ -189,12 +212,32 @@
 							border-top-left-radius: var(--navigation_border_radius);
 							border-top-right-radius: var(--navigation_border_radius);
 
-
-
 							background-color: white;
 							box-shadow: var(--navigation_box_shadow);
 
 						}
+
+						/* NAVIGATION NEXT / PREVIOUS ---------------------------------*/
+
+							.navigation__previous
+							{
+							}
+
+							.navigation__previous--layout
+							{
+								width: var(--navigation_previous_width);
+							}
+
+							.navigation__next
+							{
+							}
+
+							.navigation__next--layout
+							{
+								width: var(--navigation_next_width);
+							}
+
+
 
 
 

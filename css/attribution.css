@@ -1,7 +1,13 @@
     .attribution 
     { 
-    	font-size: 11px;
+    	font-size: 7px;
     	text-align: center; 
+
+    	min-width: 50em;
+
+    	position: absolute;
+    	bottom: 0px;
+    	left: 0px;
     }
 
     .attribution a 

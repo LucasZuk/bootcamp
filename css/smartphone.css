@@ -1,0 +1,97 @@
+/* SMARTPHONE PARAMETERS ------------------------*/
+
+@media screen and (max-width: 375px)
+{
+
+	:root
+	{
+		/* SIZE ------------------------*/
+			--testimony_block_text_width : 18em;
+
+			--block_text_width : 18em;
+			--block_text_height : 8.5em;
+
+			--profile_picture_width : 14em;
+			--profile_picture_height : 14em;
+
+			--block_image_navigation_width : 4.79em;
+			--block_image_navigation_height : 2.23em;
+
+			--testimony_block_image_width : 20.29em;
+			--testimony_block_image_height : 17.21em;
+
+			--identity_width : 9.50em;
+
+			--navigation_previous_width : 0.5em;
+			--navigation_next_width : 0.5em;
+
+		/* FONT ------------------------*/
+			--general_font_size : 14px;
+			--secondary_font_size : 12px;
+
+			--block_text_font_weight : 300;
+			--identity_name_font_weight : 700;
+			--identity_profession_font_weight : 500;
+
+			--block_text_line_height : 1.44em;
+			--block_text_text_align : center;
+
+			--identity_taxt_align : center;
+
+
+		/* BACKGROUND ------------------------*/
+			--block_text_background_size : 3.14em;
+			--block_image_background_size : 18em;
+
+		/* MARGIN ------------------------*/
+			--testimony_margin_left : auto;
+			--testimony_margin_right : auto;
+
+			--testimony_block_text_margin_top : 0;
+
+			--block_text_margin_top : 1.50em;
+			--block_text_margin_bottom : 1em;
+
+			--identity_name_margin_right : 0;
+
+			--testimony_block_image_margin_top : 0px;
+			--testimony_block_image_margin_bottom : 1.5em;
+			--testimony_block_image_margin_left : 2em;
+
+			--profile_picture_margin_top : 1.5em;
+			--profile_picture_margin_left : 1.40em;
+
+			--navigation_margin_top : -1em;
+			--navigation_margin_left : 2em;
+
+			--identity_margin_left : auto;
+			--identity_margin_right : auto;
+
+
+		/* PADDING ------------------------*/
+		
+		/* BORDER ------------------------*/
+			--profile_picture_border_radius : 5px;
+			--navigation_border_radius : 30px 30px;
+
+			--profile_picture_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
+/*			--navigation_box_shadow : 0.5em 1em 1em hsla(240, 38%, 30%, 0.25) ;
+*/
+
+		/* POSITION ------------------------*/
+			--testimony_text_quotes_positionX : 0px;
+			--testimony_text_quotes_positionY : 7.5em;
+
+			--testimony_image_bg_positionX : 0px;
+			--testimony_image_bg_positionY : 2em;
+
+			--testimony_block_image_left : -3.82em;
+
+		/*  FLEXBOX ------------------------*/
+			--testimony_flex_direction : column-reverse;
+			--testimony_block_text_flex_direction : column;
+			--block_text_identity_flex_direction : column;
+			--testimony_block_image_align_items : center;
+			--identity_align_items : center;
+	}
+}
