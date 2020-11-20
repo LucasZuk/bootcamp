@@ -33,6 +33,7 @@
 
 		/* BACKGROUND ------------------------*/
 			--block_text_background_size : 3.75em;
+			--body_background_size : 18.93em;
 
 		/* MARGIN ------------------------*/
 			--testimony_margin_left : 5.19em;
@@ -71,6 +72,9 @@
 			--testimony_image_bg_positionY : 0px;
 
 			--testimony_block_image_left : -3.82em;
+
+			--block_text_identity_align_self : flex-start;
+
 
 		/*  FLEXBOX ------------------------*/
 			--testimony_flex_direction : row;

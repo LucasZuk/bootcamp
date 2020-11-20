@@ -29,7 +29,7 @@
 		background-image: url(../images/pattern-curve.svg);
 		background-repeat: no-repeat; 
 		background-position: bottom 0px left 0px;
-		background-size: contain;
+		background-size: var(--body_background_size);
 
 		margin : 1em 0 0 0;
 	}
@@ -103,7 +103,7 @@
 
 							.block_text__identity--layout
 							{
-								align-self: center;
+								align-self: var(--block_text_identity_align_self);
 							}
 
 							/* IDENTITY NAME ---------------------------------*/

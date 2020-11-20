@@ -42,6 +42,7 @@
 		/* BACKGROUND ------------------------*/
 			--block_text_background_size : 3.14em;
 			--block_image_background_size : 18em;
+			--body_background_size : contain;
 
 		/* MARGIN ------------------------*/
 			--testimony_margin_left : auto;
@@ -93,5 +94,6 @@
 			--block_text_identity_flex_direction : column;
 			--testimony_block_image_align_items : center;
 			--identity_align_items : center;
+			--block_text_identity_align_self : center;
 	}
 }
